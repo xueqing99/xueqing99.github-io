@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Universal seletor
+
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            color: red;
+        }
+        /*
+            element selector
+            
+
+
+        */
+        p{
+            color: black;
+        }
+        h1{
+            background-color: black;
+        }
+        /*id selector 
+
+        */
+        #selector-lesson{
+            font-size: 30px;
+        }
+        /*
+        class selector
+        class attribute 
+
+        */
+
+        .genernal{
+            color: brown;
+            border: 3px solid black;
+            font-size: 70px;
+
+        }
+        .name-question{
+            color: blue;
+            background-color: blanchedalmond;
+            font-size: 30px;
+        }
+        /*
+        attribute selector
+
+        */
+        a[title="Google website"]{
+            font: 32px;
+        }
+        /*
+        descendant selector
+        div 里面 p 【element】标签 所用的作用
+        */
+
+        div p{
+            background-color: yellow;
+        }
+        /*
+        child seletor
+        仅在div里面的child的p标签作用 不作用于div下级的标签
+        */
+
+        div>p{
+            color:red ;
+        }
+         
+
+    </style>
+</head>
+<body>
+    <h1>Universal seletor</h1>
+    <p>hello selector</p>
+    <p id="selector-lesson">seletor lesson</p>
+    <p class="genernal">this is class selector</p>
+    <br>
+    <p class="genernal">I am in yangon</p>
+    <p class="name-question">what is your name</p>
+    <a href="" title="Google website">Google</a>
+    <div>
+        <p>this is paragraph 1.</p>
+        <p>this is paragraph 2.</p>
+        <p>this is paragraph 3.</p>
+        <span>
+            <p>this is paragraph 4.</p>
+        </span>
+        <p>this is paragraph 5.</p>
+    </div>
+</body>
+</html>
